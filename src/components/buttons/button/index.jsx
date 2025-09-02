@@ -1,12 +1,5 @@
-interface ButtonProps {
-  label: string;
-  onClick?: () => void;
-  className?: string;
-  icon?: React.ReactNode;
-}
-
-export const Button = (props: ButtonProps) => {
-  const { label, onClick, className, icon } = props;
+export const Button = (props) => {
+  const { label, onClick, className } = props;
 
   return (
     <button

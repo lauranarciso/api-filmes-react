@@ -1,16 +1,7 @@
 import { LupaIcon } from "../../icons/lupa-icon";
 
-interface InputTextProps {
-  label: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  id: string;
-  required: boolean;
-  placeholder?: string;
-}
-
-export const InputText = (props: InputTextProps) => {
-  const { label, value, onChange, id, required, placeholder } = props;
+export const InputText = (props) => {
+  const { value, onChange, id, placeholder } = props;
   return (
     <div className="flex flex-col gap-2 w-full relative border border-[#2C313A]/50 bg-[#1f222880] rounded-lg">
       <LupaIcon

@@ -1,9 +1,4 @@
-interface LupaIconProps {
-  className?: string;
-  stroke?: string;
-}
-
-export const LupaIcon = (props: LupaIconProps) => {
+export const LupaIcon = (props) => {
   const { className, stroke = "#ffffff" } = props;
   return (
     <svg
