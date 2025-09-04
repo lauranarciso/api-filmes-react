@@ -1,11 +1,13 @@
 export const Button = (props) => {
-  const { label, onClick, className } = props;
+  const { label, onClick, className, disabled } = props;
 
   return (
     <button
-      className={`flex items-center justify-center gap-2 bg-primary rounded-xl py-1 px-4 shadow-md transition duration-300 ease-in-out cursor-pointer text-white min-w-28 ${className}`}
+      className={`bg-primary rounded-lg py-2 font-semibold px-4 cursor-pointer text-white min-w-28 disabled:bg-gray-500 disabled:cursor-not-allowed ${className}`}
       onClick={onClick}
-    > {label}
+      disabled={disabled}
+    >
+      {label}
     </button>
   );
 };
